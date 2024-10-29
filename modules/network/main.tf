@@ -126,4 +126,6 @@ resource "aws_route_table_association" "lan_rt_association" {
 resource "aws_dx_gateway_association" "main" {
   dx_gateway_id = var.dx_gw_id
   associated_gateway_id = aws_vpn_gateway.vgw.id
+
+  allowed_prefixes = [var.vpc_mpls_cidr]
 }
