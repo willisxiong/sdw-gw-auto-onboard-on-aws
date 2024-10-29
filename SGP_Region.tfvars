@@ -1,0 +1,13 @@
+aws_region              = "ap-southeast-1"
+ami_id                  = "ami-08b17f2583f41b5cc"
+gw_location             = "SGP"
+customer_name           = "CMI"
+key_name                = "kcc"
+internet_subnet         = "subnet-075324c1c791d9b6d"
+mpls_subnet             = "subnet-05b1e60ff7cf0305c"
+lan_if_enable           = true
+lan_subnet              = "subnet-059f429a9d1f66125"
+security_group_internet = "sg-0b5919c95f4d993c0"
+security_group_mpls     = "sg-0b5919c95f4d993c0"
+security_group_lan      = "sg-0b5919c95f4d993c0"
+user_data_file          = "../bootstrap/ciscosdwan.cfg"
