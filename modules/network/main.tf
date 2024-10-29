@@ -122,3 +122,8 @@ resource "aws_route_table_association" "lan_rt_association" {
   subnet_id = aws_subnet.lan_subnet[count.index].id
   route_table_id = aws_route_table.lan_rt[count.index].id
 }
+
+resource "aws_dx_gateway_association" "main" {
+  dx_gateway_id = var.dx_gw_id
+  associated_gateway_id = aws_vpn_gateway.vgw.id
+}

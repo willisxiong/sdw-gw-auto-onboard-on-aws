@@ -35,3 +35,8 @@ variable "amz_asn" {
   description = "the asn number for amazon"
   default = "65412"
 }
+
+variable "dx_gw_id" {
+  type = string
+  description = "the direct connect gateway id to connect with vgw"
+}
