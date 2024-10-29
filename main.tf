@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "gateway_instance" {
-  source                  = "../terraform-aws-modules/compute"
+  source                  = "./modules/compute"
   ami_id                  = var.ami_id
   gw_location             = var.gw_location
   customer_name           = var.customer_name
