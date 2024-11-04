@@ -2,7 +2,6 @@ resource "aws_instance" "main" {
   ami           = var.ami_id
   instance_type = var.instance_type
   key_name      = var.key_name
-  source_dest_check = false
   user_data     = file(var.user_data_file)
 
   network_interface {
